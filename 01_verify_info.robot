@@ -17,7 +17,7 @@ Initialize
 
 Check Hostname
     ${res_system} =    execute "net show system" on device "cum01"		# cum01でコマンド実行
-    log to console  ${res_system}                                  # コンソールにログ出力
+    log to console  ${res_system}                                   # コンソールにログ出力
     Should Contain  ${res_system}  ${hostname}				        # hostnameの文字列が存在するか判定
 
 Check Interface
