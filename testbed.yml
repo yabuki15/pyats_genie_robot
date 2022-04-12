@@ -7,10 +7,10 @@ devices:
     type: linux
     credentials:
       default:
-        password: cumupasswd
-        username: root
+        password: xxx
+        username: xxx
       enable:
-        password: cumupasswd
+        password: xxx
     connections:
       cli:
         ip: 172.17.0.3
