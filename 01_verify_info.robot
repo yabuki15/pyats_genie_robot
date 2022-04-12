@@ -5,8 +5,8 @@ Library		unicon.robot.UniconRobot
 Suite setup    Setup
 
 
-*** Variables ***               # 全体で共通の変数設定
-${testbed}    testbed.yml	# テストベッド
+*** Variables *** 
+${testbed}    testbed.yml	# 全体の共通変数設定
 ${hostname}   leaf01
 ${mgmt_ip}    172.17.0.3
 
@@ -17,7 +17,7 @@ Initialize
 
 Check Hostname
     ${res_system} =    execute "net show system" on device "cum01"		# cum01でコマンド実行
-    log to console  ${res_system}					               # コンソールにログ出力
+    log to console  ${res_system}                                  # コンソールにログ出力
     Should Contain  ${res_system}  ${hostname}				        # hostnameの文字列が存在するか判定
 
 Check Interface
