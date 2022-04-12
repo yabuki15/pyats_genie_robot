@@ -1,0 +1,18 @@
+testbed:
+  name: testbed
+
+devices:
+  cum01:
+    os: linux
+    type: linux
+    credentials:
+      default:
+        password: cumupasswd
+        username: root
+      enable:
+        password: cumupasswd
+    connections:
+      cli:
+        ip: 172.17.0.3
+        port: 22
+        protocol: ssh
